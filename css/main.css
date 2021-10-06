@@ -304,11 +304,11 @@ body.nav-active .nav__list-item:nth-child(4) {
     padding: 1.4492753623vw;
     text-transform: uppercase;
 }
-@media (max-width: 960px) {
-			    .desktop {
+
+			    .hide {
 	display:none;
 			   }
-            }
+
 			
 /*-----------Main--------------- */
 
