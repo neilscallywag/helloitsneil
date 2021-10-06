@@ -16,7 +16,6 @@
 		};
 		var applyListeners = function applyListeners() {
 			menu.addEventListener('click', function () {
-			    toggleClass(nav, 'animated')
 				return toggleClass(body, 'nav-active');
 			});
 		};
@@ -130,17 +129,5 @@ $("a").on({
         cursor.removeClass("is-active"),
         follower.removeClass("is-active")
     }
-}),
-window.onload = function() {
-    function e() {
-        $(".fadeIn").each(function() {
-            let e = $(this).offset().top;
-            $(window).scrollTop() > e - $(window).height() && $(this).addClass("view")
-        })
-    }
-    e(),
-    $(window).scroll(function() {
-        e()
-    })
-}
+})
 ;
