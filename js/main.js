@@ -29,8 +29,8 @@
 })(jQuery); 
 
 window.mobileAndTabletCheck = function() {
-	cursor = document.querySelector('.cursor');
-			follower = document.querySelector('.follower');
+	var cursor = document.querySelector('.cursor');
+		var	follower = document.querySelector('.follower');
  var toggleClass = function toggleClass(element, stringClass) {
 			if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
 		};
