@@ -61,7 +61,7 @@ post_header.forEach(head => {
     ease: Expo.ease }).
 
 
-  from(image, .5, {
+  from(image, .9, {
     x: -30,
     autoAlpha: 0,
     ease: Expo.ease }).

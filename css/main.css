@@ -409,15 +409,14 @@ body.nav-active .nav__list-item:nth-child(4) {
 	font-size: 6vw;
 	line-height: 1;
 	position: relative;
-	color: #000;
+	color: #474747;
 	font-weight: 900;
 	margin: 0 0 10px 0;
 	text-transform:uppercase;
-		animation: glitch 0.5s linear infinite;
 }
 
 .post__content p {
-	color: #000;
+	color: #474747;
 	font-family: Montserrat, sans-serif;
 	font-weight: 900;
 	position: relative;
@@ -548,30 +547,6 @@ span.link {
 	
 }
 
-@keyframes glitch {
-	
-	0%,
-	100% {
-		text-shadow: -1.5px -1.5px 0 #c4c0b5,
-								 1.5px 1.5px 0 #ffF;
-	}
-	
-	25% {
-		text-shadow: 1.5px 1.5px 0 #c4c0b5,
-								 -1.5px -1.5px 0 #fff;
-	}
-	
-	50% {
-		text-shadow: 1.5px -1.5px 0 #c4c0b5,,
-								 -1.5px 1.5px 0 #fff;
-	}
-	
-	75% {
-		text-shadow: -1.5px 1.5px 0 #c4c0b5,
-								 1.5px -1.5px 0 #fff;
-	}
-	
-}
 
 
 .social-grid {
