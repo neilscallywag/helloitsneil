@@ -505,8 +505,11 @@ span.link {
 		font-size: 17em;
 	}
 	p {
-		font-size: 12px;
+		font-size: 2vw;
 	}
+	.articles-line {
+	padding: 5.5vw 12vw 5.5vw 0;
+}
 }
 
 .cursor,
@@ -584,7 +587,8 @@ span.link {
 	position: relative;
 	padding-top: 50px;
 	margin: 0 30px 15vh auto;
-	list-style: none
+	list-style: none;
+	width:85vw;
 }
 
 .articles-line {
@@ -594,7 +598,7 @@ span.link {
 	padding: 5.5vw 5.5vw 0.5vw 0;
 	border-bottom: 2.5px solid #161616;
 	text-decoration: none;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	background-color: transparent;
 	transition: all .3s ease
 }
@@ -629,10 +633,6 @@ span.link {
 		margin: 0 0 15vh;
 		padding: 0;
 	}
-	.articles-line {
-		font-size: 2vw;
-		border-bottom: 1.5px solid #161616;
-	}
 	.article-title {
 		min-width: 46.8%
 	}
@@ -642,6 +642,8 @@ span.link {
 	}
 }
 
-.mt15 {
-	margin-top: 15vh;
+ul {
+	
+	margin:0 !important;
+	padding:0;
 }
