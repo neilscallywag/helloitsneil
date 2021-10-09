@@ -41,9 +41,66 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 };
 
 let post_header = document.querySelectorAll('#post');
+let fp = document.querySelectorAll('.post__first');
+let sp = document.querySelectorAll('.post__second');
+
+const cont = new ScrollMagic.Controller();
+
+sp.forEach(y => {
+	let timeline = new TimelineMax();
+	let pp = y.querySelector('.post__h1');
+	let pl = y.querySelectorAll('li');
+	
+	
+	timeline.
+	from(pp, 1, {
+		x:-50,
+		autoAlpha:0,
+        ease: Expo.ease }).
+		
+    from(pl, .3, {
+    x: 30,
+    autoAlpha: 0,
+    ease: Expo.ease });
+	
+	  const scene = new ScrollMagic.Scene({
+    triggerElement: y,
+    triggerHook: .5,
+    reverse: true }).
 
 
+  setTween(timeline).
+  addTo(cont);
+});
 
+const control = new ScrollMagic.Controller();
+
+fp.forEach(x => {
+	let timeline = new TimelineMax();
+	let pt = x.querySelector('.post__h1');
+	let pc = x.querySelector('p');
+	
+	
+	timeline.
+	from(pt, 1, {
+		x:-50,
+		autoAlpha:0,
+        ease: Expo.ease }).
+		
+    from(pc, .3, {
+    x: 30,
+    autoAlpha: 0,
+    ease: Expo.ease });
+	
+	  const scene = new ScrollMagic.Scene({
+    triggerElement: x,
+    triggerHook: .5,
+    reverse: true }).
+
+
+  setTween(timeline).
+  addTo(control);
+});
 const controller = new ScrollMagic.Controller();
 
 post_header.forEach(head => {
