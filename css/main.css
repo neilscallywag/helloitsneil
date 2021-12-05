@@ -401,7 +401,7 @@ body.nav-active .nav__list-item:nth-child(4) {
 }
 
 .image {
-	width: 100%;
+
 	height: 80vh;
 	background-color: #111111;
 	position: relative;
@@ -440,7 +440,6 @@ body.nav-active .nav__list-item:nth-child(4) {
 	font-family: Montserrat, sans-serif;
 	font-weight: 900;
 	position: relative;
-	width: 50%;
 }
 
 .counter {
@@ -489,24 +488,25 @@ span.link {
 		width: 50vh;
 		height: auto;
 	}
+		p {
+		font-size: 2vw;
+	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	.post__wrapper {
 		flex-direction: column;
 		justify-content: center;
 	}
 	.image {
-		width: 100%;
+
 		height: 60vh;
 	}
 	.counter {
-		top: -.6em;
+		top: .1em;
 		font-size: 17em;
 	}
-	p {
-		font-size: 2vw;
-	}
+
 	.articles-line {
 	padding: 5.5vw 12vw 5.5vw 0;
 }
